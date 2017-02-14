@@ -5,6 +5,11 @@
     "require": {
         "cakephp/cakephp": "~3.3"
     },
+    "autload": {
+        "psr-4": {
+            "Lokalise\\": "src"
+        }
+    },
     "license": "MIT",
     "authors": [
         {

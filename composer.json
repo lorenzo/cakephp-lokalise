@@ -5,7 +5,7 @@
     "require": {
         "cakephp/cakephp": "~3.3"
     },
-    "autload": {
+    "autoload": {
         "psr-4": {
             "Lokalise\\": "src"
         }

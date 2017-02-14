@@ -1,0 +1,15 @@
+{
+    "name": "lorenzo/lokalise",
+    "description": "Push and Pull translations to the Lokalise translations service",
+    "type": "cakephp-plugin",
+    "require": {
+        "cakephp/cakephp": "~3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Lorenzo Rodriguez",
+            "email": "jose.zap@gmail.com"
+        }
+    ]
+}

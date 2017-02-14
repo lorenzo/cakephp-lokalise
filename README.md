@@ -45,7 +45,7 @@ you want to create/update in lokalise:
 
 
 ```sh
-bin/cake lokalise push --locakes en_US,fr_FR,pt_BR
+bin/cake lokalise push --locales en_US,fr_FR,pt_BR
 ```
 
 You can now go to your lokalise dashboard and translated all the strings. In order to see the tranlated strings in

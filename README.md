@@ -1,6 +1,6 @@
 # CakePHP Plugin for Lokalise.co
 
-Lokalise is a service that helps you translated your application strings and keep a track of how those translations
+[Lokalise](https://lokalise.co) is a service that helps you translated your application strings and keep a track of how those translations
 change. The idea of this plugin is that you can upload the translation strings to this services, then after
 translating them, download the translations and put them in the right directories for each locale.
 

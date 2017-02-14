@@ -180,10 +180,14 @@ class LokaliseShell extends Shell {
 
                 $this->verbose(sprintf('Uploading file <info>%s</info> for locale <info>%s</info>', $file, $locale));
 
+                // It is easier for all if tje files terminate with .po
+                $dest = str_replace('.pot', '.po', sys_get_temp_dir() . DS . basename($file));
+                file_put_contents($dest, file_get_contents($file));
+
                 $response = $client->post(sprintf(static::API_ENDPOINT, 'project/import'), [
                     'api_token' => $token,
                     'id' => $project,
-                    'file' => fopen($file, 'r'),
+                    'file' => fopen($dest, 'r'),
                     'lang_iso' => $locale,
                     'replace' => 0,
                     'fill_empty' => 0,
